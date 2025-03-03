@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日历颜色统计</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="clear-all">清空</button>
+      <div id="current-month-year"></div>
+      <div>
+        <button id="prev-month">←</button>
+        <button id="next-month">→</button>
+      </div>
+    </div>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>日</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th>六</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+  </div>
+  <div class="color-summary">
+    <div class="color-item">
+      <div class="color-box" style="background-color: #00ffff;"></div>
+      <span id="color-sum-2">0</span>
+    </div>
+    <div class="color-item">
+      <div class="color-box" style="background-color: #006400;"></div>
+      <span id="color-sum-3">0</span>
+    </div>
+    <div class="color-item">
+      <div class="color-box" style="background-color: #ffa500;"></div>
+      <span id="color-sum-10">0</span>
+    </div>
+  </div>
+  <div id="total-salary">总工资：4600 元</div>
+  <script src="script.js"></script>
+</body>
+</html>
