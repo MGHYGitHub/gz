@@ -1,0 +1,111 @@
+<html><body>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script>
+    function decrypt() {
+        var encrypted_code = "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";
+        var password = document.getElementById('password_entry').value;
+        try {
+            var key = CryptoJS.enc.Utf8.parse(password.padEnd(32, ' '));  // 密钥填充到32字节
+            var decrypted = CryptoJS.AES.decrypt(encrypted_code, key, {
+                mode: CryptoJS.mode.ECB,
+                padding: CryptoJS.pad.Pkcs7
+            });
+            var decryptedText = decrypted.toString(CryptoJS.enc.Utf8);
+            if (!decryptedText) {
+                throw new Error("解密失败");
+            }
+            document.open();
+            document.write(decryptedText);
+            document.close();
+        } catch (e) {
+            alert("解密失败，请检查密码是否正确。");
+        }
+    }
+    function togglePassword() {
+        var passwordInput = document.getElementById('password_entry');
+        var eyeIcon = document.getElementById('eye_icon');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            eyeIcon.textContent = '🔒';
+        } else {
+            passwordInput.type = 'password';
+            eyeIcon.textContent = '👁️';
+        }
+    }
+    </script>
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+    .container {
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        border-radius: 8px;
+    }
+    .button-container {
+        margin-top: 20px;
+    }
+    button {
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media only screen and (max-width: 600px) {
+        button {
+            padding: 15px;
+            font-size: 18px;
+        }
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .password-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .password-entry {
+        width: calc(100% - 30px);
+        padding: 12px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    .eye-icon {
+        padding: 12px;
+        cursor: pointer;
+        background: #ccc;
+        border: 1px solid #ccc;
+        border-radius: 0 5px 5px 0;
+    }
+    </style>
+    <div class="container">
+        <div class="password-container">
+            <input type="password" class="password-entry" id="password_entry" placeholder="输入密码...">
+            <span class="eye-icon" id="eye_icon" onclick="togglePassword()">👁️</span>
+        </div>
+        <div class="button-container">
+            <button onclick="decrypt()">🔓 解密页面</button>
+        </div>
+    </div>
+    </body></html>

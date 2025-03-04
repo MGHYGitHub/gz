@@ -1,0 +1,24 @@
+.
+├─ build
+│  ├─ export_file_structure
+│  │  ├─ localpycs
+│  │  │  ├─ pyimod01_archive.pyc
+│  │  │  ├─ pyimod02_importers.pyc
+│  │  │  ├─ pyimod03_ctypes.pyc
+│  │  │  ├─ pyimod04_pywin32.pyc
+│  │  │  ├─ struct.pyc
+│  │  ├─ Analysis-00.toc
+│  │  ├─ EXE-00.toc
+│  │  ├─ PKG-00.toc
+│  │  ├─ PYZ-00.pyz
+│  │  ├─ PYZ-00.toc
+│  │  ├─ base_library.zip
+│  │  ├─ export_file_structure.pkg
+│  │  ├─ warn-export_file_structure.txt
+│  │  ├─ xref-export_file_structure.html
+├─ dist
+│  ├─ 文件结构获取.exe
+├─ build.bat
+├─ export_file_structure.py
+├─ export_file_structure.spec
+├─ 文件结构获取.exe
