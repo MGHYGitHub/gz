@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .calendar-container {
+    width: 90%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .controls button:hover {
+    color: #007bff;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-table td {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .calendar-table td.today {
+    background-color: #00aaff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-table td:hover {
+    background-color: #e6f0ff;
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 10;
+  }
+  
+  .color-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .color-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .salary-calculation {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  .salary-calculation h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .salary-calculation .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .salary-calculation label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .salary-calculation input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .salary-calculation button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .salary-calculation button:hover {
+    background: #0056b3;
+  }
+  
+  .salary-calculation #total-salary {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
