@@ -51,7 +51,7 @@ class ExcelMergerApp:
         self.result_text.pack(pady=10)
 
     def select_files(self):
-        self.files = filedialog.askopenfilenames(filetypes=[("Excel Files", "*.xls;*.xlsx;*.xlsm")])
+        self.files = filedialog.askopenfilenames(filetypes=[("Excel Files", "*.xls;*.xlsx;*.xlsm;*.csv")])
         if self.files:
             messagebox.showinfo("文件选择", f"已选择 {len(self.files)} 个文件")
             self.merge_button.config(state=tk.NORMAL)
